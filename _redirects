@@ -1,0 +1,24 @@
+# Cloudflare Pages redirect rules
+#
+# Format: <from>  <to>  <status>
+#  - 200 = rewrite (serve `to` while keeping the URL in the browser)
+#  - 301/302 = redirect (change the URL in the browser)
+#
+# Order matters: first matching rule wins.
+
+# === Invite landing page (referral system) ===
+# Backend returns share URLs like https://coinityclub.com/invite/ABC12345
+# These paths are virtual; the actual file is /invite/index.html.
+# This rewrite serves index.html while keeping the path intact, so the
+# client-side JS in index.html can parse the code from window.location.pathname.
+/invite/:code  /invite/index.html  200
+
+# Allow trailing slash on /invite/ (no code) → same index page (shows manual entry form)
+/invite/       /invite/index.html  200
+
+# === Legacy / common paths (defensive redirects) ===
+# In case anyone shares the planned /r/{code} pattern instead of the actual /invite/{code}.
+/r/:code       /invite/:code       301
+
+# Lowercase variants
+/INVITE/:code  /invite/:code       301
