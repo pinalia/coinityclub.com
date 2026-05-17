@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="You've been invited to Coinity Club — Join exclusive clubs, play slots, climb towers, spin roulette. Free-to-play. Use your invite code to get welcome coins.">
+    <meta name="theme-color" content="#0A1A2F">
+    <meta property="og:title" content="You've been invited to Coinity Club!">
+    <meta property="og:description" content="Join the club. Play for free. Use your invite code to claim welcome coins.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coinityclub.com/invite/">
+    <meta property="og:image" content="https://coinityclub.com/assets/screenshots/home.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="You've been invited to Coinity Club!">
+    <meta name="twitter:description" content="Join the club. Play for free.">
+    <meta name="twitter:image" content="https://coinityclub.com/assets/screenshots/home.png">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='64' fill='%23090013'/%3E%3Cg transform='translate(256,256) scale(3.5) translate(-264,-108)'%3E%3Cpath d='M267.863 8.502C271.493 15.502 274.763 22.702 278.293 29.762C283.023 26.002 287.503 21.942 292.143 18.092C293.783 17.232 295.173 14.772 296.603 17.222C296.393 19.492 295.673 21.782 295.033 23.972C292.833 31.192 290.743 38.442 288.623 45.692C280.233 43.172 271.093 41.492 262.323 42.292C256.533 42.872 250.803 43.982 245.253 45.742C243.053 38.462 240.973 31.142 238.743 23.872C237.973 21.372 237.433 18.832 237.383 16.202C240.183 16.412 241.823 18.142 243.853 19.832C247.673 23.222 251.563 26.522 255.503 29.762C259.143 22.782 262.293 15.552 265.953 8.592C266.583 8.542 267.223 8.512 267.863 8.502Z' fill='%23fcbc0c'/%3E%3Cpath fill-rule='evenodd' d='M280.613 51.027C293.073 54.117 304.983 60.347 313.173 70.417C320.563 79.447 324.133 90.687 324.663 102.247C325.203 118.707 319.073 134.837 308.283 147.207C301.483 155.217 292.893 161.057 283.283 165.207C265.778 170.24 251.779 168.169 239.883 165.207C221.373 159.787 206.803 140.527 204.713 120.247C202.143 94.437 216.853 67.657 239.883 55.787C252.283 49.317 267.053 48.027 280.613 51.027ZM258.823 60.037C267.203 58.907 275.653 59.567 283.363 63.237C296.713 69.507 304.553 83.757 304.683 98.257C304.923 121.307 289.633 142.937 268.143 150.987C259.613 154.117 250.153 154.687 241.373 152.257C231.253 149.377 222.783 141.757 218.273 132.337C214.443 124.397 213.423 115.457 214.673 106.767C217.513 84.197 236.133 63.667 258.823 60.037Z' fill='%23fcbc0c'/%3E%3Cpath fill-rule='evenodd' d='M258.573 65.507C268.423 63.687 279.273 64.877 287.313 71.277C295.303 77.507 299.503 87.237 299.703 97.247C299.943 115.747 289.133 133.977 273.063 143.017C262.863 148.657 250.393 150.767 239.343 146.297C227.313 141.767 219.283 128.977 219.443 116.267C218.173 93.137 235.593 69.747 258.573 65.507Z' fill='%23fcbc0c'/%3E%3C/g%3E%3C/svg%3E">
+    <title>Join Coinity Club — You've Been Invited!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cc: {
+                            bg: '#0A1A2F',
+                            dark: '#06101F',
+                            deeper: '#040B15',
+                            surface: '#0F2440',
+                            border: '#1E3A5F',
+                            cyan: '#00E0FF',
+                            gold: '#FCBC0C',
+                            goldDark: '#D4AF37',
+                            orange: '#FF9800',
+                            muted: '#94A3B8',
+                            faint: '#475569',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body {
+            background: #06101F;
+            color: #e2e8f0;
+            font-family: 'Inter', system-ui, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== BACKGROUNDS ===== */
+        .hero-bg {
+            background:
+                radial-gradient(ellipse 80% 50% at 50% 30%, rgba(0,224,255,0.05) 0%, transparent 60%),
+                radial-gradient(ellipse 50% 40% at 80% 70%, rgba(252,188,12,0.03) 0%, transparent 50%),
+                linear-gradient(180deg, #040B15 0%, #0A1A2F 50%, #06101F 100%);
+        }
+
+        /* ===== CARD ===== */
+        .card {
+            background: rgba(15,36,64,0.5);
+            border: 1px solid rgba(0,224,255,0.12);
+            border-radius: 16px;
+            backdrop-filter: blur(8px);
+        }
+        .glow-border {
+            border: 1px solid rgba(0,224,255,0.25);
+            box-shadow: 0 0 24px rgba(0,224,255,0.08);
+        }
+
+        /* ===== BUTTONS ===== */
+        .btn-gold {
+            background: linear-gradient(135deg, #FCBC0C 0%, #FF9800 100%);
+            color: #040B15;
+            font-weight: 700;
+            padding: 16px 32px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            width: 100%;
+        }
+        .btn-gold:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(252,188,12,0.35);
+        }
+        .btn-outline {
+            border: 1px solid rgba(0,224,255,0.3);
+            color: #00E0FF;
+            padding: 14px 28px;
+            border-radius: 10px;
+            background: rgba(0,224,255,0.04);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            text-decoration: none;
+            width: 100%;
+            font-size: 0.95rem;
+        }
+        .btn-outline:hover {
+            border-color: rgba(0,224,255,0.5);
+            background: rgba(0,224,255,0.08);
+        }
+
+        /* ===== CODE BOX ===== */
+        .code-box {
+            font-family: 'SF Mono', Monaco, monospace;
+            font-size: 2rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: #FCBC0C;
+            background: rgba(252,188,12,0.06);
+            border: 2px dashed rgba(252,188,12,0.35);
+            padding: 16px 24px;
+            border-radius: 12px;
+            text-align: center;
+            user-select: all;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.04); } }
+        @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+        .fade-up { animation: fadeUp 0.6s ease forwards; }
+        .gift-pulse { animation: pulse 2s ease-in-out infinite; }
+        .shimmer {
+            background: linear-gradient(90deg, rgba(252,188,12,0.06) 0%, rgba(252,188,12,0.12) 50%, rgba(252,188,12,0.06) 100%);
+            background-size: 200% 100%;
+            animation: shimmer 2.5s linear infinite;
+        }
+
+        /* ===== TOAST ===== */
+        .toast {
+            position: fixed;
+            top: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-100px);
+            background: rgba(15,36,64,0.95);
+            border: 1px solid rgba(0,224,255,0.35);
+            color: #00E0FF;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        .toast.show { transform: translateX(-50%) translateY(0); }
+
+        /* ===== SPINNER ===== */
+        .spinner {
+            width: 36px; height: 36px;
+            border: 3px solid rgba(0,224,255,0.15);
+            border-top-color: #00E0FF;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* ===== STATES ===== */
+        .state { display: none; }
+        .state.active { display: block; }
+
+        /* ===== HEADER ===== */
+        .nav {
+            border-bottom: 1px solid rgba(0,224,255,0.08);
+            background: rgba(6,16,31,0.92);
+            backdrop-filter: blur(12px);
+        }
+
+        /* ===== STORE BADGES ===== */
+        .store-badge {
+            background: #fff;
+            color: #000;
+            padding: 10px 16px;
+            border-radius: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+        .store-badge:hover { transform: translateY(-2px); }
+        .store-badge svg { width: 22px; height: 22px; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 640px) {
+            .code-box { font-size: 1.5rem; letter-spacing: 3px; }
+        }
+    </style>
+</head>
+<body class="hero-bg">
+
+    <!-- Toast -->
+    <div id="toast" class="toast">Copied!</div>
+
+    <!-- Nav -->
+    <header class="nav py-4 px-5">
+        <div class="max-w-5xl mx-auto flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-cc-gold/15 border border-cc-gold/30 flex items-center justify-center">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="#FCBC0C"><circle cx="12" cy="12" r="9" stroke="#FCBC0C" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" fill="#FCBC0C"/></svg>
+                </div>
+                <span class="text-lg font-extrabold tracking-tight text-white">Coinity Club</span>
+            </a>
+            <a href="/" class="text-cc-muted text-sm hover:text-cc-cyan transition">← Back to home</a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main class="flex-1 flex items-center justify-center px-5 py-12">
+        <div class="w-full max-w-xl">
+
+            <!-- LOADING STATE -->
+            <div id="state-loading" class="state active card p-10 text-center fade-up">
+                <div class="spinner mb-6"></div>
+                <p class="text-cc-muted text-sm">Verifying your invite…</p>
+            </div>
+
+            <!-- VALID INVITE STATE -->
+            <div id="state-valid" class="state card glow-border p-8 md:p-10 fade-up">
+                <!-- Gift Icon -->
+                <div class="flex justify-center mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-cc-gold/12 border border-cc-gold/35 flex items-center justify-center gift-pulse">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FCBC0C" stroke-width="1.5">
+                            <rect x="3" y="8" width="18" height="13" rx="2"/>
+                            <path d="M12 8v13M3 13h18M7.5 8a2.5 2.5 0 010-5C10 3 12 8 12 8M16.5 8a2.5 2.5 0 000-5C14 3 12 8 12 8"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-2xl md:text-3xl font-black text-white text-center mb-2 leading-tight">
+                    You've been invited<br>to <span class="text-cc-gold">Coinity Club</span>
+                </h1>
+                <p class="text-cc-muted text-center text-sm md:text-base mb-8">
+                    Use this code in the app to claim your <span class="text-cc-cyan font-bold" id="reward-amount">welcome</span> bonus.
+                </p>
+
+                <!-- Code -->
+                <div class="mb-6">
+                    <p class="text-xs uppercase tracking-wider text-cc-muted font-semibold text-center mb-3">Your invite code</p>
+                    <div class="code-box shimmer" id="code-display">—</div>
+                    <button onclick="copyCode()" class="btn-outline mt-4">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+                        <span id="copy-label">Copy code</span>
+                    </button>
+                </div>
+
+                <!-- Divider -->
+                <div class="h-px bg-cc-border/40 my-6"></div>
+
+                <!-- CTA -->
+                <div id="cta-block">
+                    <!-- Filled by JS based on platform -->
+                </div>
+
+                <!-- How it works -->
+                <details class="mt-6 text-cc-muted text-sm">
+                    <summary class="cursor-pointer hover:text-cc-cyan transition select-none">How it works</summary>
+                    <ol class="mt-4 space-y-2 pl-5 list-decimal text-cc-muted leading-relaxed">
+                        <li>Get the Coinity Club app on iOS or Android.</li>
+                        <li>Open the app and sign in (anonymous, Google, or Apple).</li>
+                        <li>Go to <strong class="text-white/90">Invite Friends</strong> → <strong class="text-white/90">Have a code?</strong></li>
+                        <li>Enter the code above to claim your welcome coins.</li>
+                    </ol>
+                </details>
+            </div>
+
+            <!-- INVALID INVITE STATE -->
+            <div id="state-invalid" class="state card p-10 fade-up">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 rounded-full bg-red-500/12 border border-red-400/35 flex items-center justify-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#f87171" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M15 9l-6 6M9 9l6 6"/></svg>
+                    </div>
+                </div>
+                <h2 class="text-xl font-bold text-white text-center mb-2">Invite Not Found</h2>
+                <p class="text-cc-muted text-center text-sm mb-6" id="invalid-message">
+                    This invite code is invalid or has expired. But you can still get the app and start playing!
+                </p>
+                <div id="invalid-stores-block"></div>
+                <a href="/" class="block text-center text-cc-cyan text-sm mt-4 hover:underline">← Back to home</a>
+            </div>
+
+            <!-- NO CODE STATE (someone visited /invite/ without a code) -->
+            <div id="state-no-code" class="state card p-10 fade-up">
+                <div class="flex justify-center mb-6">
+                    <div class="w-16 h-16 rounded-full bg-cc-cyan/10 border border-cc-cyan/30 flex items-center justify-center">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#00E0FF" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3M12 17h.01"/></svg>
+                    </div>
+                </div>
+                <h2 class="text-xl font-bold text-white text-center mb-3">Have an Invite Code?</h2>
+                <p class="text-cc-muted text-center text-sm mb-6">
+                    Enter your friend's invite code to claim welcome bonus coins.
+                </p>
+                <form id="manual-code-form" class="flex flex-col gap-3 mb-6">
+                    <input
+                        id="manual-code-input"
+                        type="text"
+                        placeholder="ABC12345"
+                        maxlength="12"
+                        autocomplete="off"
+                        autocapitalize="characters"
+                        class="bg-cc-deeper border border-cc-border rounded-lg px-4 py-3 text-white text-center text-lg tracking-widest uppercase placeholder:text-cc-faint placeholder:tracking-normal placeholder:font-normal focus:outline-none focus:border-cc-cyan/50 transition"
+                    >
+                    <button type="submit" class="btn-gold">Verify Code</button>
+                </form>
+                <a href="/" class="block text-center text-cc-cyan text-sm hover:underline">← Back to home</a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 px-5 text-xs text-cc-faint border-t border-cc-border/30">
+        <p>© 2026 Coinity Club · <a href="/privacy-policy" class="hover:text-cc-cyan">Privacy</a> · <a href="/terms-of-service" class="hover:text-cc-cyan">Terms</a> · <a href="/support" class="hover:text-cc-cyan">Support</a></p>
+    </footer>
+
+    <script>
+        // ===== CONFIG =====
+        const API_BASE = 'https://api.coinityclub.com/api/v1';
+
+        // Store URLs — update these once Apple/Google App IDs are assigned post-review
+        const IOS_STORE_URL = 'https://apps.apple.com/app/coinity-club';
+        const ANDROID_STORE_URL = 'https://play.google.com/store/apps/details?id=com.pnr.game.coinityclub';
+
+        // ===== UTILITIES =====
+        function showState(stateId) {
+            document.querySelectorAll('.state').forEach(el => el.classList.remove('active'));
+            document.getElementById(stateId).classList.add('active');
+        }
+
+        function detectPlatform() {
+            const ua = navigator.userAgent.toLowerCase();
+            if (/iphone|ipad|ipod/.test(ua)) return 'ios';
+            if (/android/.test(ua)) return 'android';
+            return 'desktop';
+        }
+
+        function showToast(text) {
+            const toast = document.getElementById('toast');
+            toast.textContent = text;
+            toast.classList.add('show');
+            setTimeout(() => toast.classList.remove('show'), 2200);
+        }
+
+        function extractCodeFromUrl() {
+            // Path: /invite/ABC12345 or /invite/ABC12345/
+            const pathMatch = window.location.pathname.match(/^\/invite\/([A-Z0-9]+)\/?$/i);
+            if (pathMatch && pathMatch[1]) return pathMatch[1].toUpperCase();
+
+            // Fallback: ?code=ABC12345 (used by Cloudflare _redirects rewrite if implemented as query)
+            const params = new URLSearchParams(window.location.search);
+            const queryCode = params.get('code') || params.get('ref');
+            if (queryCode) return queryCode.toUpperCase();
+
+            return null;
+        }
+
+        function buildStoreUrl(baseUrl, code) {
+            // Append UTM tracking
+            const utm = `utm_source=referral&utm_medium=invite_page&utm_campaign=${encodeURIComponent(code || 'organic')}`;
+            const sep = baseUrl.includes('?') ? '&' : '?';
+            return `${baseUrl}${sep}${utm}`;
+        }
+
+        function renderCtaBlock(platform, code) {
+            const container = document.getElementById('cta-block');
+            const iosUrl = buildStoreUrl(IOS_STORE_URL, code);
+            const androidUrl = buildStoreUrl(ANDROID_STORE_URL, code);
+
+            const iosBtn = `
+                <a href="${iosUrl}" class="store-badge w-full justify-center mb-3" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.41-1.09-.47-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.41C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                    <span>Get it on the App Store</span>
+                </a>`;
+            const androidBtn = `
+                <a href="${androidUrl}" class="store-badge w-full justify-center mb-3" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.495 12l2.203-2.491zM5.864 2.595l10.939 6.333-2.303 2.303-8.636-8.636z"/></svg>
+                    <span>Get it on Google Play</span>
+                </a>`;
+
+            let html;
+            if (platform === 'ios') {
+                html = iosBtn + `<a href="${androidUrl}" class="btn-outline" rel="noopener">Looking for Android?</a>`;
+            } else if (platform === 'android') {
+                html = androidBtn + `<a href="${iosUrl}" class="btn-outline" rel="noopener">Looking for iOS?</a>`;
+            } else {
+                // Desktop — show both side by side
+                html = `
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-2">
+                        <a href="${iosUrl}" class="store-badge justify-center" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.88-3.08.41-1.09-.47-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.41C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+                            <span>App Store</span>
+                        </a>
+                        <a href="${androidUrl}" class="store-badge justify-center" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 010 1.73l-2.808 1.626L15.495 12l2.203-2.491zM5.864 2.595l10.939 6.333-2.303 2.303-8.636-8.636z"/></svg>
+                            <span>Google Play</span>
+                        </a>
+                    </div>
+                    <p class="text-cc-muted text-xs text-center mt-3">Or scan the QR code with your phone:</p>
+                    <div id="qr-container" class="flex justify-center mt-3"></div>`;
+            }
+            container.innerHTML = html;
+
+            // QR code for desktop
+            if (platform === 'desktop' && code) {
+                const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=140x140&color=0A1A2F&bgcolor=FFFFFF&data=${encodeURIComponent(window.location.href)}`;
+                document.getElementById('qr-container').innerHTML =
+                    `<img src="${qrUrl}" alt="QR code for this invite" width="140" height="140" class="rounded-lg border border-cc-border/30" loading="lazy">`;
+            }
+        }
+
+        function renderInvalidStores() {
+            const platform = detectPlatform();
+            renderCtaBlockInto('invalid-stores-block', platform, null);
+        }
+
+        function renderCtaBlockInto(containerId, platform, code) {
+            // Reuse the same logic but target a different container
+            const original = document.getElementById('cta-block');
+            const target = document.getElementById(containerId);
+            if (!target || !original) return;
+            // Save state, render, swap
+            const savedHtml = original.innerHTML;
+            renderCtaBlock(platform, code);
+            target.innerHTML = original.innerHTML;
+            original.innerHTML = savedHtml;
+        }
+
+        function formatCoinReward(amount) {
+            if (!amount || amount <= 0) return 'welcome';
+            if (amount >= 1000) return `${(amount / 1000).toFixed(amount % 1000 === 0 ? 0 : 1)}K coin`;
+            return `${amount} coin`;
+        }
+
+        // ===== COPY CODE =====
+        function copyCode() {
+            const code = document.getElementById('code-display').textContent.trim();
+            if (!code || code === '—') return;
+            const fallback = () => {
+                const ta = document.createElement('textarea');
+                ta.value = code;
+                document.body.appendChild(ta);
+                ta.select();
+                try { document.execCommand('copy'); } catch (e) {}
+                document.body.removeChild(ta);
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(code).catch(fallback);
+            } else {
+                fallback();
+            }
+            const label = document.getElementById('copy-label');
+            const prev = label.textContent;
+            label.textContent = 'Copied!';
+            showToast(`Code "${code}" copied`);
+            setTimeout(() => { label.textContent = prev; }, 2000);
+        }
+
+        // ===== VALIDATE CODE =====
+        async function validateCode(code) {
+            try {
+                const res = await fetch(`${API_BASE}/referral/validate`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ code: code.toUpperCase() })
+                });
+                const data = await res.json();
+                if (data.s === 's' && data.d && data.d.is_active) {
+                    return { ok: true, data: data.d };
+                }
+                return { ok: false, error: data.e?.m || 'Invalid invite code.', code: data.e?.c };
+            } catch (err) {
+                console.error('Validation failed:', err);
+                return { ok: false, error: 'Connection error. Please try again.', code: 'NETWORK' };
+            }
+        }
+
+        // ===== MAIN FLOW =====
+        async function init() {
+            const code = extractCodeFromUrl();
+
+            if (!code) {
+                // No code in URL — show manual entry
+                renderInvalidStores();
+                showState('state-no-code');
+                return;
+            }
+
+            // Show loading while validating
+            showState('state-loading');
+
+            const result = await validateCode(code);
+
+            if (result.ok) {
+                const data = result.data;
+                document.getElementById('code-display').textContent = data.code;
+                document.getElementById('reward-amount').textContent = formatCoinReward(data.referee_reward);
+                renderCtaBlock(detectPlatform(), data.code);
+                showState('state-valid');
+                // Analytics-friendly hook for future
+                try { window.dataLayer = window.dataLayer || []; window.dataLayer.push({event: 'referral_page_view', code: data.code, platform: detectPlatform()}); } catch (e) {}
+            } else {
+                document.getElementById('invalid-message').textContent = result.error;
+                renderInvalidStores();
+                showState('state-invalid');
+            }
+        }
+
+        // ===== MANUAL CODE FORM =====
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('manual-code-form');
+            if (form) {
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault();
+                    const inputEl = document.getElementById('manual-code-input');
+                    const value = inputEl.value.trim().toUpperCase();
+                    if (value.length < 4) {
+                        showToast('Please enter a valid code');
+                        return;
+                    }
+                    // Navigate to /invite/CODE — Cloudflare Pages rewrite will handle this
+                    window.location.href = `/invite/${encodeURIComponent(value)}`;
+                });
+            }
+            init();
+        });
+    </script>
+</body>
+</html>
